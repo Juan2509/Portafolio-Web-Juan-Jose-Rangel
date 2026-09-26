@@ -166,6 +166,33 @@ img {
     background-color: var(--rojo);
 }
 
+.language-toggle {
+    flex-shrink: 0;
+    padding: 8px 10px;
+    border: 1px solid var(--rojo);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--blanco);
+    font: 600 0.75rem var(--fuente-cuerpo);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-toggle:hover {
+    background-color: var(--rojo);
+}
+
+.language-toggle:focus-visible {
+    outline: 2px solid var(--blanco);
+    outline-offset: 4px;
+}
+
+.nav {
+    gap: 16px;
+}
+
+
 
 .nav-toggle {
     display: none;
@@ -193,7 +220,7 @@ img {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 18px;
 }
 
 .nav-links a {
@@ -615,7 +642,15 @@ img {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+
+    .language-toggle {
+        margin-left: auto;
+    }
+
+    .nav-hamburger {
+        order: 3;
+    }
 
     .nav-hamburger {
         display: flex;
@@ -670,6 +705,10 @@ img {
     }
 
 
+}
+
+@media (max-width: 768px) {
+
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
@@ -709,6 +748,12 @@ img {
 
 
 @media (max-width: 480px) {
+
+    .nav-logo {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 4px 8px;
+    }
 
     :root {
         --padding-v: 56px;

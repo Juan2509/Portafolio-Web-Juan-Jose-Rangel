@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Hoja de Vida Juan Rangel — Portafolio</title>
+    <title data-en="Juan Rangel Résumé — Portfolio">Hoja de Vida Juan Rangel — Portafolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="language.js" defer></script>
 </head>
 <body>
 
@@ -34,14 +35,17 @@
 
 
             <ul class="nav-links">
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#competencias">Habilidades</a></li>
-                <li><a href="#habilidades">Competencias</a></li>
-                <li><a href="#idiomas">Idiomas</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#perfil" data-en="Profile">Perfil</a></li>
+                <li><a href="#experiencia" data-en="Experience">Experiencia</a></li>
+                <li><a href="#competencias" data-en="Skills">Habilidades</a></li>
+                <li><a href="#habilidades" data-en="Soft Skills">Competencias</a></li>
+                <li><a href="#idiomas" data-en="Languages">Idiomas</a></li>
+                <li><a href="#formacion" data-en="Education">Formación</a></li>
+                <li><a href="#contacto" data-en="Contact">Contacto</a></li>
             </ul>
+
+            <button type="button" class="language-toggle" id="language-toggle"
+                    aria-label="Cambiar idioma a inglés" lang="en" hidden>EN</button>
 
         </nav>
     </header>
@@ -56,30 +60,30 @@
 
                 <div class="hero-texto">
 
-                    <span class="hero-etiqueta">Mi Perfil</span>
+                    <span class="hero-etiqueta" data-en="My Profile">Mi Perfil</span>
 
 
                     <h1 class="hero-nombre">Juan José Ricardo<br>Rangel Sandoval</h1>
 
 
-                    <p class="hero-cargo">Desarrollador junior &nbsp;|&nbsp; Diseñador UI</p>
+                    <p class="hero-cargo" data-en="Game Designer">Diseñador de Videojuegos</p>
 
                     <!-- Escribe aquí tu presentación (2-3 oraciones) -->
-                    <p class="hero-bio">
-                        Estudiante de desarrollo de software en formación con
+                    <p class="hero-bio" data-en="Game designer with programming knowledge and experience in web development using Python, HTML, CSS, Java, and JavaScript. Known for his integrity, commitment to improvement, and ability to develop ideas, he is looking for an environment where he can express his creativity. His values and interpersonal skills allow him to work effectively as part of a team.">
+                        Diseñador de videojuegos con
                         conocimientos en programación. Cuenta con
-                        conocimientos básicos en el desarrollo de
+                        conocimientos en el desarrollo de
                         páginas web junto con lenguajes de código
-                        como Python y JavaScript.
-                        Se destaca por su integridad y gran interés en
-                        mejorar, además busca un entorno en el que
-                        pueda hacer uso de su creatividad.
+                        como Python, HTML, CSS, Java, JavaScript.
+                        Se destaca por su integridad, gran interés en
+                        mejorar y su interpretación al momento de desarrollar ideas, además busca un entorno en el que
+                        pueda explotar su creatividad.
                         Cuenta con valores y habilidades emocionales
                         que le permiten trabajar en equipo sin
                         problemas.
                     </p>
 
-                    <a href="Hoja de Vida Juan Rangel.pdf" class="btn">Descargar CV</a>
+                    <a href="Hoja de Vida Juan Rangel.pdf" class="btn" data-en="Download CV">Descargar CV</a>
                 </div>
 
 
@@ -96,17 +100,26 @@
 
         <section id="experiencia" class="section section-blanca">
             <div class="container">
-                <h2 class="titulo-seccion">Experiencia</h2>
+                <h2 class="titulo-seccion" data-en="Experience">Experiencia</h2>
 
 
                 <article class="exp-tarjeta">
 
+                    <h3 class="exp-cargo" data-en="2D Platform Game">Videojuego de Plataformas 2D</h3>
 
-                    <h3 class="exp-cargo">Sistema Préstamo de Herramientas</h3>
+                    <p class="exp-fecha" data-en="Personal Project">Proyecto Personal</p>
+
+                    <p class="exp-descripcion" data-en="Creative direction and game development in Game Maker Studio.">
+                        Dirección creativa y en desarrollo de videojuego en Game Maker Studio.
+                    </p>
+                </article>
+
+                <article class="exp-tarjeta">
+                    <h3 class="exp-cargo" data-en="Tool Lending System">Sistema Préstamo de Herramientas</h3>
 
                     <p class="exp-fecha">Campuslands</p>
 
-                    <p class="exp-descripcion">
+                    <p class="exp-descripcion" data-en="Development of a tool lending system in Python, designed to run in the Visual Studio Code terminal.">
                         Desarrollo de proyecto acerca de un sistema de préstamo de
                         herramientas a través del lenguaje de código Python, para la
                         terminal de Visual Studio Code.
@@ -115,12 +128,36 @@
 
 
                 <article class="exp-tarjeta">
-                    <h3 class="exp-cargo">Sitio Web</h3>
+                    <h3 class="exp-cargo" data-en="Website">Sitio Web</h3>
                     <p class="exp-fecha">Campuslands</p>
-                    <p class="exp-descripcion">
+                    <p class="exp-descripcion" data-en="Development of the visual interface for an online shopping website using HTML and CSS, with Figma resources to create a professional appearance.">
                         Desarrollo de apartado visual de una página web de compras en
                         línea usando los lenguajes de código HTML y CSS usando recursos
                         de Figma para darle una apariencia profesional.
+                    </p>
+                </article>
+
+                <article class="exp-tarjeta">
+                    <h3 class="exp-cargo" data-en="Integrated Access Control System">Sistema Integral de Control de Acceso</h3>
+
+                    <p class="exp-fecha">Campuslands</p>
+
+                    <p class="exp-descripcion" data-en="Development of an access control system with database management using Java and PostgreSQL to automate access control for Zona Acme.">
+                        Desarrollo de proyecto acerca de un sistema de control de acceso con
+                        manejo de base de datos a través de Java y PostgresSQL para automatizar el control de acceso
+                        de Zona Acme.
+
+                    </p>
+                </article>
+
+                <article class="exp-tarjeta">
+                    <h3 class="exp-cargo" data-en="Formula 1 Simulator">Simulador Formula 1</h3>
+
+                    <p class="exp-fecha">Campuslands</p>
+
+                    <p class="exp-descripcion" data-en="Development of a Formula 1 simulator using Java and JOptionPane, with a registration system for drivers, circuits, and cars to simulate a Formula 1 race.">
+                        Desarrollo de proyecto de un simulador de Formula 1 a través de Java y JOptionPane
+                        con sistema de registro de pilotos, circuitos y autos con el fin de simular una carrera de Formula 1.
                     </p>
                 </article>
 
@@ -133,7 +170,7 @@
 
         <section id="competencias" class="section section-oscura">
             <div class="container">
-                <h2 class="titulo-seccion titulo-claro">Habilidades</h2>
+                <h2 class="titulo-seccion titulo-claro" data-en="Skills">Habilidades</h2>
 
                 <div class="habilidades-grid">
 
@@ -141,21 +178,21 @@
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
                             <span class="habilidad-nombre">HTML</span>
-                            <span class="habilidad-porcentaje">70%</span>
+                            <span class="habilidad-porcentaje">40%</span>
                         </div>
 
                         <div class="barra">
-                            <div class="barra-relleno" style="width: 70%;"></div>
+                            <div class="barra-relleno" style="width: 40%;"></div>
                         </div>
                     </div>
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
                             <span class="habilidad-nombre">CSS</span>
-                            <span class="habilidad-porcentaje">50%</span>
+                            <span class="habilidad-porcentaje">40%</span>
                         </div>
                         <div class="barra">
-                            <div class="barra-relleno" style="width: 50%;"></div>
+                            <div class="barra-relleno" style="width: 40%;"></div>
                         </div>
                     </div>
 
@@ -192,7 +229,7 @@
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Bases de Datos</span>
+                            <span class="habilidad-nombre" data-en="Databases">Bases de Datos</span>
                             <span class="habilidad-porcentaje">65%</span>
                         </div>
 
@@ -204,17 +241,17 @@
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
                             <span class="habilidad-nombre">Python</span>
-                            <span class="habilidad-porcentaje">40%</span>
+                            <span class="habilidad-porcentaje">30%</span>
                         </div>
 
                         <div class="barra">
-                            <div class="barra-relleno" style="width: 40%;"></div>
+                            <div class="barra-relleno" style="width: 30%;"></div>
                         </div>
                     </div>
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Marketing</span>
+                            <span class="habilidad-nombre" data-en="Game Control Design">Diseño de control de videojuego</span>
                             <span class="habilidad-porcentaje">85%</span>
                         </div>
 
@@ -225,7 +262,18 @@
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Redes Sociales</span>
+                            <span class="habilidad-nombre">Java</span>
+                            <span class="habilidad-porcentaje">60%</span>
+                        </div>
+
+                        <div class="barra">
+                            <div class="barra-relleno" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidad-item">
+                        <div class="habilidad-encabezado">
+                            <span class="habilidad-nombre" data-en="AI Tools for Projects">Manejo de IA en proyectos</span>
                             <span class="habilidad-porcentaje">80%</span>
                         </div>
 
@@ -236,18 +284,7 @@
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Edición de material publicitario</span>
-                            <span class="habilidad-porcentaje">95%</span>
-                        </div>
-
-                        <div class="barra">
-                            <div class="barra-relleno" style="width: 95%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="habilidad-item">
-                        <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Fotografía</span>
+                            <span class="habilidad-nombre" data-en="Concept Design">Diseño Conceptual</span>
                             <span class="habilidad-porcentaje">80%</span>
                         </div>
 
@@ -258,7 +295,7 @@
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Diseño</span>
+                            <span class="habilidad-nombre" data-en="Graphic Design">Diseño gráfico</span>
                             <span class="habilidad-porcentaje">90%</span>
                         </div>
 
@@ -269,18 +306,18 @@
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Edición de video</span>
-                            <span class="habilidad-porcentaje">80%</span>
+                            <span class="habilidad-nombre" data-en="Level Design">Diseño de niveles</span>
+                            <span class="habilidad-porcentaje">85%</span>
                         </div>
 
                         <div class="barra">
-                            <div class="barra-relleno" style="width: 80%;"></div>
+                            <div class="barra-relleno" style="width: 85%;"></div>
                         </div>
                     </div>
 
                     <div class="habilidad-item">
                         <div class="habilidad-encabezado">
-                            <span class="habilidad-nombre">Manejo de archivos SVG/Vectoriales</span>
+                            <span class="habilidad-nombre" data-en="Game Maker Studio Proficiency">Manejo de Game Maker Studio</span>
                             <span class="habilidad-porcentaje">95%</span>
                         </div>
 
@@ -298,21 +335,21 @@
 
         <section id="habilidades" class="section section-clara">
             <div class="container">
-                <h2 class="titulo-seccion">Competencias</h2>
+                <h2 class="titulo-seccion" data-en="Soft Skills">Competencias</h2>
 
                 <div class="etiquetas-contenedor">
 
-                    <span class="etiqueta">Trabajo en equipo</span>
-                    <span class="etiqueta">Comunicación asertiva</span>
-                    <span class="etiqueta">Resolución de problemas</span>
-                    <span class="etiqueta">Pensamiento crítico</span>
-                    <span class="etiqueta">Respeto</span>
-                    <span class="etiqueta">Disciplina</span>
-                    <span class="etiqueta">Sentido de pertenencia</span>
-                    <span class="etiqueta">Creatividad</span>
-                    <span class="etiqueta">Empatía</span>
-                    <span class="etiqueta">Responsabilidad</span>
-                    <span class="etiqueta">Innovación</span>
+                    <span class="etiqueta" data-en="Teamwork">Trabajo en equipo</span>
+                    <span class="etiqueta" data-en="Assertive Communication">Comunicación asertiva</span>
+                    <span class="etiqueta" data-en="Problem Solving">Resolución de problemas</span>
+                    <span class="etiqueta" data-en="Critical Thinking">Pensamiento crítico</span>
+                    <span class="etiqueta" data-en="Respect">Respeto</span>
+                    <span class="etiqueta" data-en="Discipline">Disciplina</span>
+                    <span class="etiqueta" data-en="Sense of Belonging">Sentido de pertenencia</span>
+                    <span class="etiqueta" data-en="Creativity">Creatividad</span>
+                    <span class="etiqueta" data-en="Empathy">Empatía</span>
+                    <span class="etiqueta" data-en="Responsibility">Responsabilidad</span>
+                    <span class="etiqueta" data-en="Innovation">Innovación</span>
 
                 </div>
             </div>
@@ -322,16 +359,16 @@
 
         <section id="idiomas" class="section section-roja">
             <div class="container">
-                <h2 class="titulo-seccion titulo-claro">Idiomas</h2>
+                <h2 class="titulo-seccion titulo-claro" data-en="Languages">Idiomas</h2>
 
                 <div class="idiomas-grid">
 
 
                     <div class="idioma-tarjeta">
 
-                        <p class="idioma-nombre">Español</p>
+                        <p class="idioma-nombre" data-en="Spanish">Español</p>
 
-                        <p class="idioma-nivel">Nativo</p>
+                        <p class="idioma-nivel" data-en="Native">Nativo</p>
                         <div class="puntos">
                             <span class="punto punto-lleno"></span>
                             <span class="punto punto-lleno"></span>
@@ -342,8 +379,8 @@
                     </div>
 
                     <div class="idioma-tarjeta">
-                        <p class="idioma-nombre">Inglés</p>
-                        <p class="idioma-nivel">Avanzado (B2)</p>
+                        <p class="idioma-nombre" data-en="English">Inglés</p>
+                        <p class="idioma-nivel" data-en="Advanced (C1)">Avanzado (C1)</p>
                         <div class="puntos">
                             <span class="punto punto-lleno"></span>
                             <span class="punto punto-lleno"></span>
@@ -363,15 +400,15 @@
 
         <section id="formacion" class="section section-blanca">
             <div class="container">
-                <h2 class="titulo-seccion">Formación</h2>
+                <h2 class="titulo-seccion" data-en="Education">Formación</h2>
 
 
                 <div class="formacion-item">
 
-                    <span class="formacion-año">En curso</span>
+                    <span class="formacion-año">2026</span>
                     <div class="formacion-detalle">
 
-                        <h3 class="formacion-titulo">Desarrollo de Software</h3>
+                        <h3 class="formacion-titulo" data-en="Software Development">Desarrollo de Software</h3>
 
                         <p class="formacion-institucion">Campuslands</p>
                     </div>
@@ -380,7 +417,7 @@
                 <div class="formacion-item">
                     <span class="formacion-año">2025</span>
                     <div class="formacion-detalle">
-                        <h3 class="formacion-titulo">Bachiller</h3>
+                        <h3 class="formacion-titulo" data-en="High School Diploma">Bachiller</h3>
                         <p class="formacion-institucion">Colegio Santo Tomás de Aquino</p>
                     </div>
                 </div>
@@ -394,15 +431,15 @@
 
         <section id="contacto" class="section section-oscura">
             <div class="container">
-                <h2 class="titulo-seccion titulo-claro">Contacto</h2>
-                <p class="contacto-intro">¿Consideras necesitar algo de creatividad e innovación? ¡Hablemos!</p>
+                <h2 class="titulo-seccion titulo-claro" data-en="Contact">Contacto</h2>
+                <p class="contacto-intro" data-en="Looking for some creativity and innovation? Let’s talk!">¿Consideras necesitar algo de creatividad e innovación? ¡Hablemos!</p>
 
                 <div class="contacto-grid">
 
                     <div class="contacto-tarjeta">
                         <span class="contacto-icono">✉</span>
                         <div>
-                            <p class="contacto-etiqueta">Correo</p>
+                            <p class="contacto-etiqueta" data-en="Email">Correo</p>
                             <a href="mailto:juanjosericardorangelsandoval@email.com" class="contacto-valor">
                                 juanjosericardorangelsandoval@email.com
                             </a>
@@ -413,7 +450,7 @@
                     <div class="contacto-tarjeta">
                         <span class="contacto-icono">☎</span>
                         <div>
-                            <p class="contacto-etiqueta">Teléfono</p>
+                            <p class="contacto-etiqueta" data-en="Phone">Teléfono</p>
                             <a href="tel:+573107928569" class="contacto-valor">
                                 +57 310 7928569
                             </a>
@@ -452,7 +489,7 @@
 
 
     <footer class="footer">
-        <p>&copy; 2026 Juan José Ricardo Rangel Sandoval. Todos los derechos reservados.</p>
+        <p data-en="© 2026 Juan José Ricardo Rangel Sandoval. All rights reserved.">&copy; 2026 Juan José Ricardo Rangel Sandoval. Todos los derechos reservados.</p>
     </footer>
 
 </body>

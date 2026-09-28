@@ -6,6 +6,11 @@
         spanish: element.textContent,
         english: element.dataset.en
     }));
+    const imageTranslations = Array.from(document.querySelectorAll('[data-alt-en]'), element => ({
+        element,
+        spanish: element.alt,
+        english: element.dataset.altEn
+    }));
     const photo = document.querySelector('.foto-imagen');
     const menu = document.querySelector('.nav-hamburger');
     const spanishAlt = photo.alt;
@@ -21,6 +26,9 @@
             element.textContent = isEnglish ? english : spanish;
         });
         document.documentElement.lang = language;
+        imageTranslations.forEach(({ element, spanish, english }) => {
+            element.alt = isEnglish ? english : spanish;
+        });
         photo.alt = isEnglish ? 'Photo of Juan Rangel' : spanishAlt;
         menu.setAttribute('aria-label', isEnglish ? 'Toggle menu' : spanishMenuLabel);
         button.textContent = isEnglish ? 'ES' : 'EN';

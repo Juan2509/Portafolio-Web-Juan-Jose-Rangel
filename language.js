@@ -13,6 +13,9 @@
     }));
     const photo = document.querySelector('.foto-imagen');
     const menu = document.querySelector('.nav-hamburger');
+    const cvDownload = document.getElementById('cv-download');
+    const spanishCV = cvDownload.getAttribute('href');
+    const englishCV = 'CV_Personal_Juan Rangel_Game Design_English.pdf';
     const spanishAlt = photo.alt;
     const spanishMenuLabel = menu.getAttribute('aria-label');
     const storageKey = 'portfolio-language';
@@ -26,6 +29,7 @@
             element.textContent = isEnglish ? english : spanish;
         });
         document.documentElement.lang = language;
+        cvDownload.setAttribute('href', isEnglish ? englishCV : spanishCV);
         imageTranslations.forEach(({ element, spanish, english }) => {
             element.alt = isEnglish ? english : spanish;
         });
